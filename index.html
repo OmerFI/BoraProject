@@ -18,7 +18,7 @@
         <div class="line"></div>
         <div class="left-bar-nest">
           <div class="topic">
-            <h1>Başlık 1</h1>
+            <h1 id="c1">The Python Tutorial</h1>
             <ul>
               <li class="subtitle"><a>Alt başlıklar</a></li>
               <li class="subtitle"><a>Alt başlıklar</a></li>
@@ -27,7 +27,7 @@
             </ul>
           </div>
           <div class="topic">
-            <h1>Başlık 2</h1>
+            <h1 id="c2">Exceptions</h1>
             <ul>
               <li class="subtitle"><a>Alt başlıklar</a></li>
               <li class="subtitle"><a>Alt başlıklar</a></li>
@@ -36,7 +36,7 @@
             </ul>
           </div>
           <div class="topic">
-            <h1>Başlık 3</h1>
+            <h1 id="c3">User-defined</h1>
             <ul>
               <li class="subtitle"><a>Alt başlıklar</a></li>
               <li class="subtitle"><a>Alt başlıklar</a></li>
@@ -45,7 +45,7 @@
             </ul>
           </div>
           <div class="topic">
-            <h1>Başlık 4</h1>
+            <h1 id="c4">Clean-up</h1>
             <ul>
               <li class="subtitle"><a>Alt başlıklar</a></li>
               <li class="subtitle"><a>Alt başlıklar</a></li>
@@ -59,140 +59,141 @@
       <div class="content">
         <!-- Başlık 1 -->
         <div id="c1">
-          <h1>Başlık 1</h1>
+          <h1>The Python Tutorial</h1>
           <div class="paragraphs">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cupiditate veritatis consequuntur officiis unde autem. Quas
-              mollitia ipsam officia ab praesentium in doloribus culpa deserunt
-              itaque quibusdam ducimus debitis, nostrum animi. expedita suscipit
-              officiis. expedita suscipit officiis. expedita suscipit officiis.
+              Python is an easy to learn, powerful programming language. It has
+              efficient high-level data structures and a simple but effective
+              approach to object-oriented programming. Python’s elegant syntax
+              and dynamic typing, together with its interpreted nature, make it
+              an ideal language for scripting and rapid application development
+              in many areas on most platforms.
             </p>
             <p>
-              Nulla alias molestiae modi iusto consectetur! Sint, esse! Eveniet
-              dolor quis reprehenderit iste sunt! Dolores alias eius repellat
-              consequuntur dolore dignissimos cum a. Voluptatum vero impedit
-              nisi expedita suscipit officiis. expedita suscipit officiis.
-              expedita suscipit officiis. expedita suscipit officiis.
+              The Python interpreter and the extensive standard library are
+              freely available in source or binary form for all major platforms
+              from the Python web site, https://www.python.org/, and may be
+              freely distributed. The same site also contains distributions of
+              and pointers to many free third party Python modules, programs and
+              tools, and additional documentation.
             </p>
             <p>
-              Culpa, impedit alias illum delectus at dolor veritatis repellat
-              accusamus nulla asperiores ea ratione similique, sequi dolore
-              mollitia tempora atque sunt. Laboriosam assumenda ex animi quis
-              atque repudiandae explicabo doloremque. expedita suscipit
-              officiis. expedita suscipit officiis.
+              The Python interpreter is easily extended with new functions and
+              data types implemented in C or C++ (or other languages callable
+              from C). Python is also suitable as an extension language for
+              customizable applications.
             </p>
             <p>
-              Ab quam voluptates unde cum, tenetur officiis atque perspiciatis
-              quibusdam doloribus provident vero veritatis quos voluptas,
-              similique est tempore dolor, saepe magni? Molestias laboriosam a
-              illo, ipsa amet aperiam consequatur? expedita suscipit officiis.
-              expedita suscipit officiis.
+              This tutorial introduces the reader informally to the basic
+              concepts and features of the Python language and system. It helps
+              to have a Python interpreter handy for hands-on experience, but
+              all examples are self-contained, so the tutorial can be read
+              off-line as well.
             </p>
           </div>
         </div>
 
         <!-- Başlık 2 -->
         <div id="c2" class="inactive">
-          <h1>Başlık 2</h1>
+          <h1>Exceptions</h1>
           <div class="paragraphs">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cupiditate veritatis consequuntur officiis unde autem. Quas
-              mollitia ipsam officia ab praesentium in doloribus culpa deserunt
-              itaque quibusdam ducimus debitis, nostrum animi. expedita suscipit
-              officiis. expedita suscipit officiis. expedita suscipit officiis.
+              Even if a statement or expression is syntactically correct, it may
+              cause an error when an attempt is made to execute it. Errors
+              detected during execution are called exceptions and are not
+              unconditionally fatal: you will soon learn how to handle them in
+              Python programs. Most exceptions are not handled by programs,
+              however, and result in error messages as shown here:
             </p>
             <p>
-              Nulla alias molestiae modi iusto consectetur! Sint, esse! Eveniet
-              dolor quis reprehenderit iste sunt! Dolores alias eius repellat
-              consequuntur dolore dignissimos cum a. Voluptatum vero impedit
-              nisi expedita suscipit officiis. expedita suscipit officiis.
-              expedita suscipit officiis. expedita suscipit officiis.
+              The last line of the error message indicates what happened.
+              Exceptions come in different types, and the type is printed as
+              part of the message: the types in the example are
+              ZeroDivisionError, NameError and TypeError. The string printed as
+              the exception type is the name of the built-in exception that
+              occurred. This is true for all built-in exceptions, but need not
+              be true for user-defined exceptions (although it is a useful
+              convention). Standard exception names are built-in identifiers
+              (not reserved keywords).
             </p>
             <p>
-              Culpa, impedit alias illum delectus at dolor veritatis repellat
-              accusamus nulla asperiores ea ratione similique, sequi dolore
-              mollitia tempora atque sunt. Laboriosam assumenda ex animi quis
-              atque repudiandae explicabo doloremque. expedita suscipit
-              officiis. expedita suscipit officiis.
+              It is possible to write programs that handle selected exceptions.
+              Look at the following example, which asks the user for input until
+              a valid integer has been entered, but allows the user to interrupt
+              the program (using Control-C or whatever the operating system
+              supports); note that a user-generated interruption is signalled by
+              raising the KeyboardInterrupt exception.
             </p>
             <p>
-              Ab quam voluptates unde cum, tenetur officiis atque perspiciatis
-              quibusdam doloribus provident vero veritatis quos voluptas,
-              similique est tempore dolor, saepe magni? Molestias laboriosam a
-              illo, ipsa amet aperiam consequatur? expedita suscipit officiis.
-              expedita suscipit officiis.
+              A try statement may have more than one except clause, to specify
+              handlers for different exceptions. At most one handler will be
+              executed. Handlers only handle exceptions that occur in the
+              corresponding try clause, not in other handlers of the same try
+              statement. An except clause may name multiple exceptions as a
+              parenthesized tuple, for example:
             </p>
           </div>
         </div>
 
         <!-- Başlık 3 -->
         <div id="c3" class="inactive">
-          <h1>Başlık 3</h1>
+          <h1>User-defined</h1>
           <div class="paragraphs">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cupiditate veritatis consequuntur officiis unde autem. Quas
-              mollitia ipsam officia ab praesentium in doloribus culpa deserunt
-              itaque quibusdam ducimus debitis, nostrum animi. expedita suscipit
-              officiis. expedita suscipit officiis. expedita suscipit officiis.
+              Programs may name their own exceptions by creating a new exception
+              class (see Classes for more about Python classes). Exceptions
+              should typically be derived from the Exception class, either
+              directly or indirectly.
             </p>
             <p>
-              Nulla alias molestiae modi iusto consectetur! Sint, esse! Eveniet
-              dolor quis reprehenderit iste sunt! Dolores alias eius repellat
-              consequuntur dolore dignissimos cum a. Voluptatum vero impedit
-              nisi expedita suscipit officiis. expedita suscipit officiis.
-              expedita suscipit officiis. expedita suscipit officiis.
+              Exception classes can be defined which do anything any other class
+              can do, but are usually kept simple, often only offering a number
+              of attributes that allow information about the error to be
+              extracted by handlers for the exception. When creating a module
+              that can raise several distinct errors, a common practice is to
+              create a base class for exceptions defined by that module, and
+              subclass that to create specific exception classes for different
+              error conditions:
             </p>
             <p>
-              Culpa, impedit alias illum delectus at dolor veritatis repellat
-              accusamus nulla asperiores ea ratione similique, sequi dolore
-              mollitia tempora atque sunt. Laboriosam assumenda ex animi quis
-              atque repudiandae explicabo doloremque. expedita suscipit
-              officiis. expedita suscipit officiis.
+              Most exceptions are defined with names that end in “Error”,
+              similar to the naming of the standard exceptions.
             </p>
             <p>
-              Ab quam voluptates unde cum, tenetur officiis atque perspiciatis
-              quibusdam doloribus provident vero veritatis quos voluptas,
-              similique est tempore dolor, saepe magni? Molestias laboriosam a
-              illo, ipsa amet aperiam consequatur? expedita suscipit officiis.
-              expedita suscipit officiis.
+              Many standard modules define their own exceptions to report errors
+              that may occur in functions they define. More information on
+              classes is presented in chapter Classes.
             </p>
           </div>
         </div>
 
         <!-- Başlık 4 -->
         <div id="c4" class="inactive">
-          <h1>Başlık 4</h1>
+          <h1>Clean-up</h1>
           <div class="paragraphs">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cupiditate veritatis consequuntur officiis unde autem. Quas
-              mollitia ipsam officia ab praesentium in doloribus culpa deserunt
-              itaque quibusdam ducimus debitis, nostrum animi. expedita suscipit
-              officiis. expedita suscipit officiis. expedita suscipit officiis.
+              The try statement has another optional clause which is intended to
+              define clean-up actions that must be executed under all
+              circumstances. For example:
             </p>
             <p>
-              Nulla alias molestiae modi iusto consectetur! Sint, esse! Eveniet
-              dolor quis reprehenderit iste sunt! Dolores alias eius repellat
-              consequuntur dolore dignissimos cum a. Voluptatum vero impedit
-              nisi expedita suscipit officiis. expedita suscipit officiis.
-              expedita suscipit officiis. expedita suscipit officiis.
+              If a finally clause is present, the finally clause will execute as
+              the last task before the try statement completes. The finally
+              clause runs whether or not the try statement produces an
+              exception. The following points discuss more complex cases when an
+              exception occurs:
             </p>
             <p>
-              Culpa, impedit alias illum delectus at dolor veritatis repellat
-              accusamus nulla asperiores ea ratione similique, sequi dolore
-              mollitia tempora atque sunt. Laboriosam assumenda ex animi quis
-              atque repudiandae explicabo doloremque. expedita suscipit
-              officiis. expedita suscipit officiis.
+              As you can see, the finally clause is executed in any event. The
+              TypeError raised by dividing two strings is not handled by the
+              except clause and therefore re-raised after the finally clause has
+              been executed.
             </p>
             <p>
-              Ab quam voluptates unde cum, tenetur officiis atque perspiciatis
-              quibusdam doloribus provident vero veritatis quos voluptas,
-              similique est tempore dolor, saepe magni? Molestias laboriosam a
-              illo, ipsa amet aperiam consequatur? expedita suscipit officiis.
-              expedita suscipit officiis.
+              In real world applications, the finally clause is useful for
+              releasing external resources (such as files or network
+              connections), regardless of whether the use of the resource was
+              successful.
             </p>
           </div>
         </div>

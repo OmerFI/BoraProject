@@ -102,17 +102,16 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 46px;
-  color: #20F2CC;
+  color: #20f2cc;
   margin-bottom: 45px;
 }
 
 .paragraphs p {
-    margin-bottom: 24px;
-    max-width: 1000px;
-    line-height: 27px;
-    font-size: 17px;
-    /* font-weight: normal;
-    font-style: normal; */
+  margin-bottom: 24px;
+  max-width: 1000px;
+  /* line-height: 27px; */
+  line-height: 30px;
+  font-size: 19px;
 }
 
 /* .subtitle:hover {
@@ -120,9 +119,13 @@ body {
 } */
 
 .left-bar-nest .subtitle a {
-    /* cursor: default; */
+  /* cursor: default; */
 }
 
 .inactive {
-    display: none;
+  display: none;
+}
+
+.left-bar-nest h1 {
+  cursor: pointer;
 }
