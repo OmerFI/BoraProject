@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #fff;
+}
+
+body {
+  background-color: #273c37;
+}
+
+.nav-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2e30;
+  height: 90px;
+}
+
+.nav-div h1 {
+  background-color: inherit;
+  font-size: 37px;
+  font-weight: bold;
+  font-style: normal;
+  color: #20f2cc;
+}
+
+.left-bar {
+  background-color: #1f2e30;
+  /* width: 337px; */
+  width: 437px;
+  height: 990px;
+  display: inline-block;
+}
+
+.left-bar .left-bar-nest {
+  background-color: rgba(18, 243, 162, 0.1);
+  height: 910px;
+  margin: 40px 34px;
+  padding: 29px 23px 0;
+}
+
+.left-bar-nest .topic:last-child {
+  margin-bottom: 0;
+}
+
+.left-bar .line {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: #20f2cc;
+}
+
+.topic {
+  margin-bottom: 31px;
+}
+
+.topic h1 {
+  color: #20f2cc;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.26);
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.topic ul {
+  padding-top: 21px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.topic ul li {
+  position: relative;
+  /* width: 100%; */
+  text-align: center;
+  margin-top: 12px;
+}
+
+.topic ul li:first-child {
+  margin: 0;
+}
+
+.topic ul li a {
+  text-decoration: none;
+  align-items: center;
+}
+
+.main-div {
+  display: flex;
+}
+
+.content {
+  margin-left: 106px;
+  margin-top: 82px;
+  width: 100%;
+}
+
+.content h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  color: #20F2CC;
+  margin-bottom: 45px;
+}
+
+.paragraphs p {
+    margin-bottom: 24px;
+    max-width: 1000px;
+    line-height: 27px;
+    font-size: 17px;
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+/* .subtitle:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+} */
+
+.left-bar-nest .subtitle a {
+    /* cursor: default; */
+}
+
+.inactive {
+    display: none;
+}
