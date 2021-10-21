@@ -28,9 +28,8 @@ body {
 
 .left-bar {
   background-color: #1f2e30;
-  /* width: 337px; */
-  width: 437px;
-  height: 990px;
+  width: 337px;
+  /* width: 437px; */
   display: inline-block;
 }
 
@@ -74,7 +73,6 @@ body {
 
 .topic ul li {
   position: relative;
-  /* width: 100%; */
   text-align: center;
   margin-top: 12px;
 }
@@ -93,9 +91,14 @@ body {
 }
 
 .content {
-  margin-left: 106px;
+  /* margin-left: 106px;
   margin-top: 82px;
-  width: 100%;
+  width: 100%; */
+  position: relative;
+  /* right: -5rem; */
+  right: -106px;
+  top: 82px;
+  /* top: 2rem; */
 }
 
 .content h1 {
@@ -109,17 +112,8 @@ body {
 .paragraphs p {
   margin-bottom: 24px;
   max-width: 1000px;
-  /* line-height: 27px; */
   line-height: 30px;
   font-size: 19px;
-}
-
-/* .subtitle:hover {
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-} */
-
-.left-bar-nest .subtitle a {
-  /* cursor: default; */
 }
 
 .inactive {
